@@ -133,7 +133,8 @@ var config_data = `
       "choices": {
         "n": "Not Effective<br>",
         "a": "Average<br>",
-        "v": "Very Effective<br>"
+        "v": "Very Effective<br>",
+        "x": "Not Observed"
       },
       "defaultValue": "a"
     },
