@@ -134,7 +134,7 @@ var config_data = `
         "n": "Not Effective<br>",
         "a": "Average<br>",
         "v": "Very Effective<br>",
-        "x": ""
+        "x": "x<br>"
       },
     },
     { "name": "Defense Rating",
