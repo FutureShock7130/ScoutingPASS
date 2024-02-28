@@ -5,20 +5,20 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "姓名縮寫",
       "code": "s",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
+    { "name": "比賽",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024CASF",
       "required": "true"
     },
-    { "name": "Match Level",
+    { "name": "比賽類別",
       "code": "l",
       "type": "level",
       "choices": {
@@ -29,7 +29,7 @@ var config_data = `
       "defaultValue": "qm",
       "required": "true"
     },
-    { "name": "Match #",
+    { "name": "比賽編號 #",
       "code": "m",
       "type": "match",
       "min": 1,
@@ -55,7 +55,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
+    { "name": "在圖片上點擊機器人起始位置",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -65,25 +65,25 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Leave Starting Zone",
+    { "name": "離開開始區域(白線)",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "Amp得分(幾個)",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Speaker得分(幾個)",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
+    { "name": "Amp得分(幾個)",
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Speaker得分(幾個)",
       "code": "tss",
       "type": "counter"
     },
@@ -133,10 +133,8 @@ var config_data = `
       "choices": {
         "n": "Not Effective<br>",
         "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "v": "Very Effective<br>"
       },
-      "defaultValue": "x"
     },
     { "name": "Defense Rating",
       "code": "dr",
@@ -162,24 +160,24 @@ var config_data = `
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
+    { "name": "停機或完全沒動",
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
+    { "name": "高重心/容易翻倒",
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
+    { "name": "夾不住Note",
       "code": "dn",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
+    { "name": "好隊友?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
     },
-    { "name": "Comments",
+    { "name": "綜合評價",
       "code": "co",
       "type": "text",
       "size": 15,
