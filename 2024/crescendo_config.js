@@ -133,9 +133,9 @@ var config_data = `
       "choices": {
         "n": "Not Effective<br>",
         "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "x<br>"
+        "v": "Very Effective<br>"
       },
+      "defaultValue": "a"
     },
     { "name": "Defense Rating",
       "code": "dr",
