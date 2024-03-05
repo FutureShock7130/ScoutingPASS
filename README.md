@@ -4,7 +4,7 @@
 
 #### A scouting system for FIRST FRC competitions developed by [PWNAGE - Team #2451](https://pwnagerobotics.org).
 
-<a href="https://charleywang246.github.io/ScoutingPASS/">Live Demo</a> . <a href="https://charleywang246.github.io/ScoutingPASS/pit.html">Pit Scouting</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
+<a href="https://futureshock7130.github.io/ScoutingPASS/">Live Demo</a> . <a href="https://futureshock7130.github.io/ScoutingPASS/pit.html">Pit Scouting</a> . <a href="#getting-started">Getting Started</a> . <a href="#faq">FAQ</a>
 
 <!-- TABLE OF CONTENTS -->
 <details>
