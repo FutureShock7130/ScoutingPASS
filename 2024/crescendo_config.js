@@ -5,7 +5,7 @@ var config_data = `
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "紀錄者姓名",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023tnkn",
+      "defaultValue": "2024casf",
       "required": "true"
     },
     { "name": "Match Level",
@@ -55,7 +55,7 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
+    { "name": "在圖上點機器人起始位置",
       "code": "as",
       "type": "clickable_image",
       "filename": "2024/field_image.png",
@@ -65,29 +65,29 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Leave Starting Zone",
+    { "name": "離開起始線(藍線)",
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "Auto進Amp數量",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Auto進Speaker數量",
       "code": "ass",
       "type": "counter"
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
+    { "name": "Tele進Amp數量",
       "code": "tas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
+    { "name": "Tele進Speaker數量",
       "code": "tss",
       "type": "counter"
     },
-    { "name": "Times Amplified",
+    { "name": "整對聯盟Amplified的次數",
       "code": "tta",
       "type": "counter"
     },
@@ -98,7 +98,7 @@ var config_data = `
         "s": "Source<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
-        "x": "Not Attempted"
+        "x": "No"
       },
       "defaultValue": "x"
     }
@@ -112,12 +112,12 @@ var config_data = `
       "code": "fs",
       "type":"radio",
       "choices": {
-        "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
-        "x": "Not attempted"
+        "p": "停在Stage下(Bumper有碰到就好)<br>",
+        "o": "懸掛<br>",
+        "s": "懸掛(有套中)<br>",
+        "h": "多台一起懸掛<br>",
+        "a": "試著懸掛但掉下來<br>",
+        "x": "試都沒試"
       },
       "defaultValue": "x"
     },
@@ -127,59 +127,59 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
+    { "name": "駕駛綜合評價",
       "code": "ds",
       "type": "radio",
       "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
+        "n": "低<br>",
+        "a": "中<br>",
+        "v": "高<br>",
+        "x": "-1"
       },
       "defaultValue": "x"
     },
-    { "name": "Defense Rating",
+    { "name": "防守能力",
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
+        "b": "低<br>",
+        "a": "中<br>",
+        "g": "高<br>",
+        "e": "極佳<br>",
+        "x": "未進行防守"
       },
       "defaultValue": "x"
     },
-    { "name": "Speed Rating",
+    { "name": "循環速度評價",
       "code": "sr",
       "type": "radio",
       "choices": {
-        "1": "1 (slow)<br>",
+        "1": "1 (慢)<br>",
         "2": "2<br>",
         "3": "3<br>",
         "4": "4<br>",
-        "5": "5 (fast)"
+        "5": "5 (快)"
       },
       "defaultValue":"3"
     },
-    { "name": "Died/Immobilized",
+    { "name": "整場不動/被Disable",
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
+    { "name": "重心高容易倒<br>",
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
+    { "name": "掉Note (>2)",
       "code": "dn",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
+    { "name": "好隊友?",
       "tooltip": "Would you want this robot on your alliance in eliminations?",
       "code": "all",
       "type": "bool"
     },
-    { "name": "Comments",
+    { "name": "額外評論",
       "code": "co",
       "type": "text",
       "size": 15,
