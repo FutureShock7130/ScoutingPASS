@@ -87,7 +87,7 @@ var config_data = `
       "code": "tss",
       "type": "counter"
     },
-    { "name": "整對聯盟Amplified的次數",
+    { "name": "整隊聯盟Amplified的次數",
       "code": "tta",
       "type": "counter"
     },
