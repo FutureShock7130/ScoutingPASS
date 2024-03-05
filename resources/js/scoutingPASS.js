@@ -70,7 +70,7 @@ function addTimer(table, idx, name, data) {
   button1.setAttribute("id", "start_" + data.code);
   button1.setAttribute("type", "button");
   button1.setAttribute("onclick", "timer(this.parentElement)");
-  button1.setAttribute("value", "Start");
+  button1.setAttribute("value", "開始");
   cell.appendChild(button1);
 
   var inp = document.createElement("input");
@@ -99,7 +99,7 @@ function addTimer(table, idx, name, data) {
   button2.setAttribute("id", "clear_" + data.code);
   button2.setAttribute("type", "button");
   button2.setAttribute("onclick", "resetTimer(this.parentElement)");
-  button2.setAttribute("value", "Reset");
+  button2.setAttribute("value", "重設");
   cell.appendChild(button2);
   var lineBreak = document.createElement("br");
   cell.appendChild(lineBreak);
@@ -109,13 +109,13 @@ function addTimer(table, idx, name, data) {
     button3.setAttribute("id", "cycle_" + data.code);
     button3.setAttribute("type", "button");
     button3.setAttribute("onclick", "newCycle(this.parentElement)");
-    button3.setAttribute("value", "New Cycle");
+    button3.setAttribute("value", "新循環");
     cell.appendChild(button3);
     var button4 = document.createElement("input");
     button4.setAttribute("id", "undo_" + data.code);
     button4.setAttribute("type", "button");
     button4.setAttribute("onclick", "undoCycle(this.parentElement)");
-    button4.setAttribute("value", "Undo");
+    button4.setAttribute("value", "重做");
     button4.setAttribute('style', "margin-left: 20px;");
     cell.appendChild(button4);
   }
@@ -129,7 +129,7 @@ function addTimer(table, idx, name, data) {
   var inp = document.createElement('input');
   inp.setAttribute("type", "hidden");
   inp.setAttribute("id", "status_" + data.code);
-  inp.setAttribute("value", "stopped");
+  inp.setAttribute("value", "停止");
   cell.appendChild(inp);
   inp = document.createElement('input');
   inp.setAttribute("hidden", "");
@@ -255,7 +255,7 @@ function addClickableImage(table, idx, name, data) {
       let undoButton = document.createElement("input");
       undoButton.setAttribute("type", "button");
       undoButton.setAttribute("onclick", "undo(this.parentElement)");
-      undoButton.setAttribute("value", "Undo");
+      undoButton.setAttribute("value", "重做");
       undoButton.setAttribute("id", "undo_" + data.code);
       undoButton.setAttribute("class", "undoButton");
       cell.appendChild(undoButton);
@@ -266,7 +266,7 @@ function addClickableImage(table, idx, name, data) {
       let flipButton = document.createElement("input");
       flipButton.setAttribute("type", "button");
       flipButton.setAttribute("onclick", "flip(this.parentElement)");
-      flipButton.setAttribute("value", "Flip Image");
+      flipButton.setAttribute("value", "左右翻轉");
       flipButton.setAttribute("id", "flip_" + data.code);
       flipButton.setAttribute("class", "flipButton");
       if (showUndo) {
@@ -1025,7 +1025,7 @@ function swipePage(increment) {
       window.scrollTo(0, 0);
       slides[slide].style.display = "table";
       document.getElementById('data').innerHTML = "";
-      document.getElementById('copyButton').setAttribute('value','Copy Data');
+      document.getElementById('copyButton').setAttribute('value','複製數據(記得貼到Excel!)');
     }
   }
 }
@@ -1382,7 +1382,7 @@ function displayData(){
 
 function copyData(){
   navigator.clipboard.writeText(getData(dataFormat));
-  document.getElementById('copyButton').setAttribute('value','Copied');
+  document.getElementById('copyButton').setAttribute('value','已複製');
 }
 
 window.onload = function () {
