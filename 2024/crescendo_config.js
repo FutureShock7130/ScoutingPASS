@@ -97,10 +97,10 @@ var config_data = `
       "choices": {
         "s": "音源區<br>",
         "f": "地面<br>",
-        "b": "'兩者<br>",
+        "b": "兩者<br>",
         "x": "沒撿"
       },
-      "defaultValue": "x"
+      "defaultValue": "f"
     }
   ],
   "endgame": [
@@ -134,9 +134,9 @@ var config_data = `
         "n": "低<br>",
         "a": "中<br>",
         "v": "高<br>",
-        "x": "-1"
+        "x": "沒動"
       },
-      "defaultValue": "x"
+      "defaultValue": "a"
     },
     { "name": "防守能力",
       "code": "dr",
