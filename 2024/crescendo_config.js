@@ -12,31 +12,31 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Event",
+    { "name": "比賽名稱",
       "code": "e",
       "type": "event",
       "defaultValue": "2024casf",
       "required": "true"
     },
-    { "name": "Match Level",
+    { "name": "比賽類型",
       "code": "l",
       "type": "level",
       "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
+        "qm": "資格賽<br>",
+        "sf": "準決賽<br>",
+        "f": "決賽"
       },
       "defaultValue": "qm",
       "required": "true"
     },
-    { "name": "Match #",
+    { "name": "比賽編號 #",
       "code": "m",
       "type": "match",
       "min": 1,
       "max": 150,
       "required": "true"
     },
-    { "name": "Robot",
+    { "name": "隊伍位置(依照賽程表)",
       "code": "r",
       "type": "robot",
       "choices": {
@@ -49,7 +49,7 @@ var config_data = `
       },
       "required":"true"
     },
-    { "name": "Team #",
+    { "name": "隊伍號碼",
       "code": "t",
       "type": "team",
       "min": 1,
@@ -91,24 +91,24 @@ var config_data = `
       "code": "tta",
       "type": "counter"
     },
-    { "name": "Pickup From",
+    { "name": "撿Note方法",
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Source<br>",
-        "f": "Floor<br>",
-        "b": "Both<br>",
-        "x": "No"
+        "s": "音源區<br>",
+        "f": "地面<br>",
+        "b": "'兩者<br>",
+        "x": "沒撿"
       },
       "defaultValue": "x"
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
+    { "name": "Stage計時",
       "code": "dt",
       "type": "timer"
     },
-    { "name": "Final Status",
+    { "name": "最終狀態",
       "code": "fs",
       "type":"radio",
       "choices": {
@@ -121,7 +121,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Note in Trap",
+    { "name": "Trap裡有Note",
       "code": "nit",
       "type": "bool"
     }
