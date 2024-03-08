@@ -22,6 +22,7 @@ var config_data = `
       "code": "l",
       "type": "level",
       "choices": {
+        "pm": "練習賽<br>",
         "qm": "資格賽<br>",
         "sf": "準決賽<br>",
         "f": "決賽"
