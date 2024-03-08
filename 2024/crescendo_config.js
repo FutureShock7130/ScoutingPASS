@@ -27,7 +27,7 @@ var config_data = `
         "sf": "準決賽<br>",
         "f": "決賽"
       },
-      "defaultValue": "qm",
+      "defaultValue": "pm",
       "required": "true"
     },
     { "name": "比賽編號 #",
