@@ -15,7 +15,7 @@ var config_data = `
     { "name": "比賽名稱",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024casf",
+      "defaultValue": "2024cada",
       "required": "true"
     },
     { "name": "比賽類型",
